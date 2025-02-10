@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../styles/styles1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h2>AnimeDash</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="https://myanimelist.net/" target="_blank"><span>🏠</span> MyAnimeList</a></li>
+            <li><a href="https://www.crunchyroll.com/pt-br/" target="_blank"><span>🎥</span> Crunchyroll</a></li>
+            <li><a href="https://anilist.co/" target="_blank"><span>⭐</span> AniList</a></li>
+            <li><a href="https://www.livechart.me/" target="_blank"><span>🔄</span> Lançamentos</a></li>
+            <li><a href="https://www.animenewsnetwork.com/" target="_blank"><span>📰</span> Notícias</a></li>
+            <li><a href="../scripts/logout.php"><span>🚪</span> Sair</a></li>
+        </ul>
+    </div>
+
+
+    <div class="main-content">
+        <div class="header">
+            <h1>Bem-vindo, <?php echo htmlspecialchars($_SESSION['username']); ?>!</h1>
+        </div>
+        
+        <div class="container">
+            <img src="../image/anime-avatar.jpg" alt="Anime Avatar" class="anime-img">
+            <div class="dashboard-content">
+                <p>Este é o seu painel de controle.</p>
+                <p>Aproveite sua experiência com nosso tema de anime!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

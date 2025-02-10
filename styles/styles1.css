@@ -1,0 +1,120 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1e1e2e;
+    font-family: 'Poppins', sans-serif;
+    color: #f8c8dc;
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #282a36;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 4px 0 8px rgba(255, 182, 193, 0.3);
+}
+
+.sidebar-header h2 {
+    font-family: 'Press Start 2P', cursive;
+    color: #ff79c6;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 20px 0;
+}
+
+.nav-links a {
+    color: #f8c8dc;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.nav-links a span {
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+.nav-links a:hover {
+    color: #ff79c6;
+    transform: scale(1.1);
+}
+
+/* Conteúdo principal */
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.header {
+    background-color: #44475a;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(255, 182, 193, 0.3);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #ffb6c1;
+}
+
+/* Conteúdo */
+.container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.anime-img {
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #ff79c6;
+    transition: transform 0.3s ease;
+}
+
+.anime-img:hover {
+    transform: scale(1.1);
+}
+
+.dashboard-content {
+    background: rgba(50, 50, 100, 0.9);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #ff79c6;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+a {
+    color: #f8c8dc;
+    text-decoration: none;
+    font-weight: bold;
+}
